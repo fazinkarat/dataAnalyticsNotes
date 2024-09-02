@@ -1,0 +1,75 @@
+1. Filter data to make your spreadsheet less complex and busy.
+2. Use and freeze headers so you know what is in each column, even when scrolling.
+3. When multiplying numbers, use an asterisk (*) not an X.
+4. Start every formula and function with an equal sign (=).
+5. Whenever you use an open parenthesis, make sure there is a closed parenthesis on the other end to match.
+6. Change the font to something easy to read.
+7. Set the border colors to white so that you are working in a blank sheet. 
+8. Create a tab with just the raw data, and a separate tab with just the data you need.
+Now that you have learned some basic ways to avoid errors, you can focus on what to do when that dreaded pop-up does appear. The following table is a reference you can use to look up common spreadsheet errors and examples of each. Knowing what the errors mean takes some of the fear out of getting them. 
+Error	Description	Example
+#DIV/0!	A formula is trying to divide a value in a cell by 0 (or an empty cell with no value)	=B2/B3, when the cell B3 contains the value 0 
+#ERROR!	(Google Sheets only)  Something can’t be interpreted as it has been input. This is also known as a parsing error. 	=COUNT(B1:D1 C1:C10) is invalid because the cell ranges aren't separated by a comma
+#N/A	A formula can't find the data 	The cell being referenced can't be found 
+#NAME?	The name of a formula or function used isn't recognized	The name of a function is misspelled 
+#NUM!	The spreadsheet can't perform a formula calculation because a cell has an invalid numeric value	=DATEDIF(A4, B4, "M") is unable to calculate the number of months between two dates because the date in cell A4 falls after the date in cell B4
+#REF!	A formula is referencing a cell that isn't valid	A cell used in a formula was in a column that was deleted
+#VALUE!	A general error indicating a problem with a formula or with referenced cells	There could be problems with spaces or text, or with referenced cells in a formula; you may have additional work to find the source of the problem.
+If you are working with Microsoft Excel, an interactive page, How to correct a #VALUE! error, can help you narrow down the cause of this error. You can select a specific function from a drop-down list to display a link to tips to fix the error when using that function.
+
+Pro tip: Spotting errors in spreadsheets with conditional formatting
+Conditional formatting can be used to highlight cells a different color based on their contents. This feature can be extremely helpful when you want to locate all errors in a large spreadsheet. For example, using conditional formatting, you can highlight in yellow all cells that contain an error, and then work to fix them.
+
+Conditional formatting in Microsoft Excel
+To set up conditional formatting in Microsoft Excel to highlight all cells in a spreadsheet that contain errors, do the following:
+1. Click the gray triangle above row number 1 and to the left of Column A to select all cells in the spreadsheet.
+2. From the main menu, click Home, and then click Conditional Formatting to select Highlight Cell Rules > More Rules.
+3. For Select a Rule Type, choose Use a formula to determine which cells to format.
+4. For Format values where this formula is true, enter =ISERROR(A1).
+5. Click the Format button, select the Fill tab, select yellow (or any other color), and then click OK. 
+6. Click OK to close the format rule window.
+To remove conditional formatting, click Home and select Conditional Formatting, and then click Manage Rules. Locate the format rule in the list, click Delete Rule, and then click OK. 
+Conditional formatting in Google Sheets
+To set up conditional formatting in Google Sheets to highlight all cells in a spreadsheet that contain errors, do the following:
+1. Click the empty rectangle above row number 1 and to the left of Column A to select all cells in the spreadsheet. In the Step-by-step in spreadsheets video, this was called the Select All button. 
+2. From the main menu, click Format and select Conditional Formatting to open the Conditional format rules pane on the right.
+3. While in the Single Color tab, under Format rules, use the drop-down to select Custom formula is, enter =ISERROR(A1), select yellow (or any other color) for the formatting style, and then click Done.
+To remove conditional formatting, click Format and select Conditional Formatting, and then click the Trash icon for the format rule.
+
+From <https://www.coursera.org/learn/ask-questions-make-decisions/supplement/1sjGm/more-about-spreadsheet-errors-and-fixes> 
+
+Keyboard Shortcuts
+
+https://d3c33hcgiwev3.cloudfront.net/UbHnj9LnRlGx54_S5yZRJA_64a50a70b938476c852b172e826e9af1_DAC2-Keyboard-functions-1.pdf?Expires=1723939200&Signature=lemvlFq0d7D7g3523QB825-OnGFMqkqijZIMR7A8oyOWOr9NvcE1JuOg7U01wWeRYE7ewY8yLl~kzbEBf1Y1Nh0U8YVHk35C1nZDZeOJzLQmE1i4b9Nfq-0-uy~BSwXY8wWSWSv7BLZoNhu9wvGnVur0yeBy0o34qELH4nMX69s_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A
+
+https://d3c33hcgiwev3.cloudfront.net/9gsOZ_tGTtOLDmf7Rh7T1Q_8a825edae2a94e5e81d880681270acf1_DAC2-Keyboard-functions-2.pdf?Expires=1723939200&Signature=L0WRFJ~0gtbKrz6Oo6gS8qlEzBPBN8v1S7GRzoLynv82QXVwUA494qMT3FdaOoiqxtNtJQERY5FsyYQSV5sYh1Ow81yZ3tNQnC0RUz7bs~oF~5H8oNH184kqPfgQ3GJl2BYFoRYSrXxszHz8SnarZRBViUKj32d~UpigMXfsrjk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A
+
+AVERAGE: A spreadsheet function that returns an average of the values from a selected range 
+Borders: Lines that can be added around two or more cells on a spreadsheet
+Cell reference: A cell or a range of cells in a worksheet typically used in formulas and functions
+COUNT: A spreadsheet function that counts the number of cells in a range that meet a specific criteria
+Equation: A calculation that involves addition, subtraction, multiplication, or division (also called a math expression)
+Fill handle: A box in the lower-right-hand corner of a selected spreadsheet cell that can be dragged through neighboring cells in order to continue an instruction
+Filtering: The process of showing only the data that meets a specified criteria while hiding the rest
+Header: The first row in a spreadsheet that labels the type of data in each column
+Math expression: A calculation that involves addition, subtraction, multiplication, or division (also called an equation)
+Math function: A function that is used as part of a mathematical formula
+MAX: A spreadsheet function that returns the largest numeric value from a range of cells
+MIN: A spreadsheet function that returns the smallest numeric value from a range of cells
+Open data: Data that is available to the public
+Operator: A symbol that names the operation or calculation to be performed
+Order of operations: Using parentheses to group together spreadsheet values in order to clarify the order in which operations should be performed
+Problem domain: The area of analysis that encompasses every activity affecting or affected by a problem
+Range: A collection of two or more cells in a spreadsheet
+Report: A static collection of data periodically given to stakeholders 
+Return on investment (ROI): A formula that uses the metrics of investment and profit to evaluate the success of an investment
+Revenue: The total amount of income generated by the sale of goods or services 
+Scope of work (SOW): An agreed-upon outline of the tasks to be performed during a project
+Sorting: The process of arranging data into a meaningful order to make it easier to understand, analyze, and visualize
+SUM: A spreadsheet function that adds the values of a selected range of cells
+
+From <https://www.coursera.org/learn/ask-questions-make-decisions/supplement/aZ5ss/glossary-terms-from-module-3> 
+
+
+
+
